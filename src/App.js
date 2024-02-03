@@ -13,6 +13,11 @@ const router = createBrowserRouter([
     path: "/check-in",
     element: <CheckInPage />,
   },
+  //  TODO: Sort a default route to homepage
+  {
+    path: "/yupi-frontend",
+    element: <Homepage />
+  },
 ]);
 
 function App() {
