@@ -1,8 +1,8 @@
 import './App.css';
-// import {InlineWidget} from "react-calendly";
 import {createHashRouter, RouterProvider} from "react-router-dom";
 import Homepage from "./page/Homepage";
 import CheckInPage from "./page/CheckInPage";
+import ActivityBookingPage from "./page/ActivityBookingPage";
 
 const router = createHashRouter([
   {
@@ -13,6 +13,10 @@ const router = createHashRouter([
     path: "/check-in",
     element: <CheckInPage />,
   },
+  {
+    path: "/activity-booking",
+    element: <ActivityBookingPage />
+  },
   //  TODO: Sort proper routing based on GH pages URL suffix
   {
     path: "/yupi-frontend",
@@ -22,6 +26,10 @@ const router = createHashRouter([
     path: "/yupi-frontend/check-in",
     element: <CheckInPage />,
   },
+  {
+    path: "/yupi-frontend/activity-booking",
+    element: <ActivityBookingPage />
+  }
 ]);
 
 function App() {
@@ -29,12 +37,6 @@ function App() {
     <div className="flex justify-center h-screen m-auto max-w-screen-lg">
       <RouterProvider router={router} />
     </div>
-
-    // <div className="App">
-    //     {/*<header className="App-header">*/}
-    //     {/*    <InlineWidget url="https://calendly.com/jonasdieterich/30min" />*/}
-    //     {/*</header>*/}
-    // </div>
   );
 }
 
