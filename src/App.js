@@ -13,10 +13,14 @@ const router = createBrowserRouter([
     path: "/check-in",
     element: <CheckInPage />,
   },
-  //  TODO: Sort a default route to homepage
+  //  TODO: Sort proper routing based on GH pages URL suffix
   {
     path: "/yupi-frontend",
     element: <Homepage />
+  },
+  {
+    path: "/yupi-frontend/check-in",
+    element: <CheckInPage />,
   },
 ]);
 
