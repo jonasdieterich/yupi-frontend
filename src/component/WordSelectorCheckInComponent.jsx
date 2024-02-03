@@ -21,8 +21,8 @@ const WordSelectorCheckInComponent = ({moodOptions, moods, setMoods, setCheckInS
                 )
             })}
             </div>
-            <div className={`mt-4 bg-white text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded
-                            shadow ${(3 >= moods.length && moods.length > 0) && 'bg-gray-400'}`}
+            <div className={`mt-4 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded
+                            shadow ${(3 >= moods.length && moods.length > 0) ? 'bg-gray-400' : 'bg-white'}`}
                  onClick={() => {if (3 >= moods.length && moods.length > 0) {setCheckInStage(2)}}}>
                 Mood.
             </div>
