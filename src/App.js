@@ -1,10 +1,10 @@
 import './App.css';
 // import {InlineWidget} from "react-calendly";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {createHashRouter, RouterProvider} from "react-router-dom";
 import Homepage from "./page/Homepage";
 import CheckInPage from "./page/CheckInPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Homepage />
