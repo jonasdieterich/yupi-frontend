@@ -2,6 +2,7 @@ import './App.css';
 // import {InlineWidget} from "react-calendly";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Homepage from "./page/Homepage";
+import CheckInPage from "./page/CheckInPage";
 
 const router = createBrowserRouter([
   {
@@ -10,13 +11,15 @@ const router = createBrowserRouter([
   },
   {
     path: "/check-in",
-    element: <div>How you doin'</div>,
+    element: <CheckInPage />,
   },
 ]);
 
 function App() {
   return (
-    <RouterProvider router={router} />
+    <div className="flex">
+      <RouterProvider router={router} />
+    </div>
 
     // <div className="App">
     //     {/*<header className="App-header">*/}
