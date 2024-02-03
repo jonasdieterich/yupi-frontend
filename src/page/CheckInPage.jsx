@@ -2,7 +2,9 @@ import React from "react";
 
 const CheckInPage = () => {
     return (
-        <div>How you doin'</div>
+        <div className="flex justify-center items-center text-center">
+            How you doin'
+        </div>
     );
 }
 
